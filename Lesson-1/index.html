@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LESSON 1</title>
+    <link rel="stylesheet" href="lesson1.css">
+	<script>
+	  window.onscroll = function() {
+    var header = document.querySelector("header");
+    var sticky = header.offsetTop;
+    if (window.pageYOffset > sticky) {
+      header.classList.add("sticky");
+    } else {
+      header.classList.remove("sticky");
+    }
+  };
+
+	</script>
+ </head>
+   <body>
+     <header id="header">
+        <nav class="navbar">
+          <h1 class="logo">D<span>Web</span> </h1>
+          <ul>
+            <li><a href="https://DealWeb.github.io">home</a></li>
+            <li><a href="https://DealWeb.github.io/lesson-1/">lesson 2</a></li>
+            <li><a href="https://DealWeb.github.io/lesson-3/">lesson 3</a></li>
+            <li><a href="https://DealWeb.github.io/lesson-4/">lesson 4</a></li>
+            <li>
+                <a href="#">Lessons</a>
+                 <ul class="dropdown">
+                    <li><a href="https://DealWeb.github.io/lesson-1/">les 1</a></li>
+                    <li><a href="https://DealWeb.github.io/lesson-2/">les 2</a></li>
+                    <li><a href="https://DealWeb.github.io/lesson-3/">les 3</a></li>
+                    <li><a href="https://DealWeb.github.io/lesson-4/">les 4</a></li>
+                 </ul>
+            </li>
+          </ul>
+          
+          <button class="btn">hired me</button>  
+        </nav>
+    </header>
+	
+	<div class="container-1">
+	 <h1 class="intro">lesson <span>1</span></h1>
+	  <div class="wrapper-1">
+      <div class="table img">
+        <img src="Picture1.png">
+      </div>
+      <div class="table text">
+        <h1>analog</h1>
+        <p>Analog computers. 
+	The analog computers represent data in the form of continuous electrical signals having a specific magnitude. These computers are very fast in their operations to be carried out at the same time, and a powerful tool to solve differential equations.</p>
+
+      </div>
+	  </div>
+    <div class="wrapper-1">
+      <div class="table text">
+        <h1>digital computer</h1>
+        <p>The digital computer is also known as the digital information processing system, is a type of computer that stores and processes data in the digital form. 
+        </p>
+
+      </div>
+      <div class="table img">
+        <img src="Picture2.png">
+      </div>
+
+	  </div>
+    <div class="wrapper-1">
+      <div class="table img">
+        <img src="Picture3.jpg">
+      </div>
+      <div class="table text">
+        <h1>Based on Application</h1>
+        <p>General purpose computers. They are designed in such a manner that they can work in all environments. The general-purpose computers are versatile and can store several programs meant for performing distinct tasks. These computers are not efficient and consume a large amount of time in generating the results.
+        </p>
+
+      </div>
+	  </div>
+    <div class="wrapper-1">
+      <div class="table text">
+        <h1>Minicomputers</h1>
+        <p>These are faster and more powerful than microcomputers. Their word length is 32 bits (word length means number of bits in a computer word). These computers can perform more complex tasks and cost more than microcomputers. They are larger in size and their storage capacity is small to medium.</p>
+
+      </div>
+      <div class="table img">
+        <img src="Picture4.png">
+      </div>
+
+	  </div>
+    <div class="wrapper-1">
+      <div class="table img">
+        <img src="Picture5.png">
+      </div>
+      <div class="table text">
+        <h1>Super Computers</h1>
+        <p>These are the largest and fastest computers, there word length is 64-96 bit, it is also the costliest. It has several CPUs which operate in parallel to make it faster. This is used for massive data processing and solving very sophisticated problems, in the fields of science and defense</p>
+
+      </div>
+	  </div>
+	</div>
+   </body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LESSON 1</title>
+    <link rel="stylesheet" href="lesson3.css">
+	<script>
+	  window.onscroll = function() {
+    var header = document.querySelector("header");
+    var sticky = header.offsetTop;
+    if (window.pageYOffset > sticky) {
+      header.classList.add("sticky");
+    } else {
+      header.classList.remove("sticky");
+    }
+  };
+
+	</script>
+ </head>
+   <body>
+     <header id="header">
+        <nav class="navbar">
+          <h1 class="logo">D<span>Web</span></h1>
+          <ul>
+            <li><a href="https://DealWeb.github.io">home</a></li>
+            <li><a href="https://DealWeb.github.io/lesson-1/">lesson 1</a></li>
+            <li><a href="https://DealWeb.github.io/lesson-2/">lesson 2</a></li>
+            <li><a href="https://DealWeb.github.io/lesson-4/">lesson 4</a></li>
+            <li>
+                <a href="#">Lessons</a>
+                 <ul class="dropdown">
+                    <li><a href="https://DealWeb.github.io/lesson-1/">les 1</a></li>
+                    <li><a href="https://DealWeb.github.io/lesson-2/">les 2</a></li>
+                    <li><a href="https://DealWeb.github.io/lesson-3/">les 3</a></li>
+                    <li><a href="https://DealWeb.github.io/lesson-4/">les 4</a></li>
+                 </ul>
+            </li>
+          </ul>
+          
+          <button class="btn">hired me</button>  
+        </nav>
+    </header>
+	
+	<div class="container-1">
+	 <h1 class="intro">lesson <span>3</span></h1>
+	  <div class="wrapper-1">
+      <div class="table img">
+        <img src="Picture11.png">
+      </div>
+      <div class="table text">
+        <h1>Analytical Engine  </h1>
+        <p>Ada Lovelace, is the world’s first computer programmer, provided the first algorithm intended to be processed by Charles Babbage's early mechanical general-purpose computer, the Analytical Engine. She suggested that a binary system should be used for storage rather than a decimal system. 
+        </p>
+
+      </div>
+	  </div>
+    <div class="wrapper-1">
+      <div class="table text">
+        <h1>Boolean logic</h1>
+        <p>George Boole developed Boolean logic which would later be used in the design of computer circuitry. 
+        </p>
+
+      </div>
+      <div class="table img">
+        <img src="Picture12.png">
+      </div>
+
+	  </div>
+    <div class="wrapper-1">
+      <div class="table img">
+        <img src="Picture13.png">
+      </div>
+      <div class="table text">
+        <h1>Difference Engine </h1>
+        <p>Charles P. Babbage, the "father of the computer", designed a machine, the difference engine which would be steam- powered, fully automatic and commanded by a fixed instruction program.
+        </p>
+
+      </div>
+	  </div>
+    <div class="wrapper-1">
+      <div class="table text">
+        <h1>Special purpose computers</h1>
+        <p>They are designed in such a manner that they can perform only a specified task. The special purpose computers are not versatile, and their speed and memory size depend on the task that is to be performed. The special purpose computers are efficient and consume less amount of time in generating the results. 
+        </p>
+
+      </div>
+      <div class="table img">
+        <img src="Picture14.png">
+      </div>
+
+	  </div>
+    <div class="wrapper-1">
+      <div class="table img">
+        <img src="Picture15.png">
+      </div>
+      <div class="table text">
+        <h1>Mainframes </h1>
+        <p>These are more powerful than minicomputers the word length may be 48, 60 or 64 bits. It has high processing speeds and can store large amounts of data. This is used in research organizations, large industries, large business and government organizations, banks and airline reservations where large database is needed. However, these computers consume more electricity.
+        </p>
+
+      </div>
+	  </div>
+	</div>
+   </body>
+</html>

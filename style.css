@@ -1,0 +1,941 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+   /*     navigation bar    */
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 0.3% 10%;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    font-size: 20px;
+  }
+.navbar .logo{
+    color: #fff;
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+  .navbar .logo span{
+    color: #EC4D37;
+}
+.navbar ul li{
+    display: inline-block;
+    list-style: none;
+    padding-left: 50px;
+    margin: 0;
+    position: relative;
+}
+.navbar ul li a{
+    color: #FFF;
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    font-weight: 400;
+    display: block;
+}
+.navbar ul li ul.dropdown li{
+  display: block;
+}
+.navbar ul li ul.dropdown li:hover{
+  background-color: #EC4D37;
+
+}
+.navbar ul li ul.dropdown li a{
+  padding: 20px 0px;
+}
+.navbar ul li ul.dropdown li a:hover{
+  color: #fff;
+}
+.navbar ul li ul.dropdown{
+  width: 100%;
+  background-color: #333;
+  position: absolute;
+  z-index: -1;
+  display: none;
+}
+.navbar ul li a:hover{
+  color: #EC4D37;
+}
+.navbar ul li:hover ul.dropdown{
+  display: block;
+}
+.navbar .btn{
+    padding: 8px 16px;
+    outline: none;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #000;
+    background-color: #EC4D37;
+    border-radius: 20px;
+    border: 2px solid #EC4D37;
+    font-weight: bold;
+}
+.navbar .btn:hover{
+    background-color: #333;
+    border-color: #EC4D37;
+    color: #EC4D37;
+}
+
+/*   container 1   */
+
+.container-1{
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url(me-cap.jpg);
+    background-attachment: fixed; 
+    height: 100vh;
+    width: 100%;
+    padding: 2% 7%;
+    position: relative;
+}
+.container-1 .intro-1{
+    position: absolute;
+    top: 44%;
+    transition: translateY(-50%);
+    font-family: 'Poppins', sans-serif;
+}
+.container-1 .intro-1 h5{
+    color: #fff;
+    font-size: 25px;
+    letter-spacing: 1.5px;
+    margin-bottom: 5px;
+}
+.container-1 .intro-1 h2{
+   color: #fff;
+   font-size: 40px;
+   letter-spacing: 1.5px;
+   margin-bottom: 5px;
+}
+.container-1 .intro-1 h4{
+    color: #fff;
+    font-size:  32px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    letter-spacing: 1.5px;
+}
+.container-1 .intro-1 span{
+    color: #EC4D37;
+    font-weight: bold;
+}
+.container-1 .intro-1 .contact-1 .fb{
+    border: 1px solid #fff;
+    padding: 10px 16px;
+    margin-right: 10px;
+    background: transparent;
+    border-radius: 80%;
+    color: #fff;
+}
+.container-1 .intro-1 .contact-1 .mail{
+    border: 1px solid #fff;
+    padding: 10px 13px;
+    margin-right: 10px;
+    background: transparent;
+    border-radius: 80%;
+    color: #fff;
+}
+.container-1 .intro-1 .contact-1 .fb:hover{
+    color: #EC4D37;
+    border: 1px solid #EC4D37;
+}
+.container-1 .intro-1 .contact-1 .mail:hover{
+    color: #EC4D37;
+    border: 1px solid #EC4D37;
+}
+
+   /*  container 2  */
+
+.container-2{
+    padding-top: 130px;
+    padding-bottom :50px;
+    background: white;
+    width: 100%;
+  }
+  .container-2 .about-cp{
+    color: #000;
+    font-family: 'Poppins', sans-serif;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    font-size: 40px;
+    display: none;
+  }
+  .container-2 .content-1 .text-1 h2{
+    color: #000;
+    font-family: 'Poppins', sans-serif;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+    font-size: 40px;
+  }
+  .container-2 h2 span{
+    color: #EC4D37;
+    font-family: 'Poppins', sans-serif;
+  }
+  .container-2 .content-1{
+    width: 90%;
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    align-items: center;
+  }
+  .container-2 .content-1 img{
+    height: 300px;
+    width: 380px;
+    margin-right: 50px;
+    border-radius: 40px
+  }
+  .container-2 .content-1 .text-1 p{
+    color: #333;
+    letter-spacing: 1px;
+    line-height: 25px;
+    margin-bottom: 40px;
+    font-size: 18px;
+  }
+  .container-2 .content-1 .text-2{
+    display: flex;
+  }
+  .container-2 .content-1 .text-2 p{
+    color: #333;
+    font-size: 18px;
+    margin-bottom: 40px;
+    letter-spacing: 1px;
+    line-height: 20px;
+    margin-right: 200px;
+  }
+  .container-2 .content-1 .text-2 span{
+    color: #333;
+    background-color: transparent;
+  }
+  .container-2 .content-1 .text-2 strong{
+    color:#EC4D37;
+  }
+  .p-2{
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
+  
+  /*page 3*/
+  
+  .interest{
+    width: 100%;
+    padding: 30px 0 10px 0;
+    background-color: white;
+    margin-top: 50px;
+  }
+  .interest .hobbies{
+    width: 90%;
+    max-width: 90%;
+    align-items: center;
+    margin: auto;
+  }
+  .interest .hobbies h3{
+    color: #000;
+    font-family: 'Poppins', sans-serif;
+    text-transform: capitalize;
+    letter-spacing: 1.5px;
+    margin-bottom: 30px;
+    font-size: 25px;
+  }
+  .interest .hobbies .box-1{
+    display: flex;
+    justify-content: space-around;
+  }
+  .interest .hobbies .box-1 .box-2{
+    width: 230px;
+    padding: 10px 0;
+    background-color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+    box-shadow: 0 0 0px #333;
+    border-radius: 10px;
+  }
+  .interest .hobbies .box-1 .box-2:hover{
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 0 10px #EC4D37;
+    transform: scale(1.02);
+  }
+  .interest .hobbies .box-1 .box-2 p{
+    color: #fff;
+    letter-spacing: 1.5px;
+    text-indent: capitalize;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: capitalize;
+  }
+  .interest .hobbies .box-1 .box-2 p:hover{
+    color: #EC4D37;
+    cursor: pointer;
+  }
+  .interest .hobbies .box-1 .box-2 span{
+    color: #EC4D37; 
+  }
+  
+  /*Page 4*/
+  
+  .skills{
+    width: 100%;
+    padding: 10px 0;
+    background-color: white;
+  }
+  .skills .skill-content{
+    max-width: 90%;
+    width: 90%;
+    margin: auto;
+  }
+  .skills .skill-content h4{
+    color: #000;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 1.5px;
+    margin-bottom: 30px;
+    font-weight: 600px;
+    font-size: 30px;
+  }
+  .skills .skill-content p{
+    color: #333;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+    font-size: 20px;
+    margin-left: 18px;
+    font-weight: 600px;
+  }
+  .skills .skill-content p strong{
+    color: #EC4D37;
+    font-weight: 600px;
+  }
+  
+  /*Page 4*/
+  
+  .container-3{
+    width: 100%;
+    padding-bottom: 40px;
+    background-color: white;
+    padding-top: 100px;
+  }
+  .container-3 .resume{
+    max-width: 90%;
+    width: 90%;
+    margin: auto;
+    display: flex;
+  }
+  .container-3 .resume .school{
+    margin-right: 400px;
+  }
+  .container-3 .resume .school h2{
+    font-family: 'Poppins', sans-serif;
+    color: #000;
+    font-size: 30px;
+    letter-spacing: 1.5px;
+    margin-bottom: 45px;
+    text-transform: capitalize;
+  }
+  .container-3 .resume .school h4{
+    color: #000;
+    letter-spacing: 1.5px;
+    margin-bottom: 20px;
+    margin-left: 15px;
+    font-weight: 400px;
+    font-size: 23px;
+  }
+  .container-3 .resume .school h4 span{
+    color: #EC4D37;
+  }
+  .container-3 .resume .school p{
+    color: #EC4D37;
+    margin-left: 35px;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    font-size: 16px;
+  }
+  .container-3 .resume .school p span{
+    color: #333;
+  }
+  .container-3 .resume .achievement{
+    margin-top: 75px;
+  }
+  .container-3 .resume .achievement{
+    margin-top: 75px;
+  }
+  .container-3 .resume .achievement h4{
+    font-size: 20px;
+    color: #000;
+    margin-bottom: 23px;
+    letter-spacing: 1.5px;
+    font-weight: 400px;
+    margin-top: 30px;
+    text-transform: capitalize;
+  }
+  .container-3 .resume .achievement h4 span{
+    color: #EC4D37;
+  }
+  .container-3 .resume .achievement p{
+    color: #EC4D37;
+    text-transform: capitalize;
+    letter-spacing: 1.5px;
+    margin-bottom: 10px;
+    margin-left: 15px;
+    font-size: 16px;
+  }
+  .container-3 .resume .achievement p span{
+    color: #333;
+  }
+  
+  /*page 5*/
+  
+  .service{
+    background-color: white;
+    width: 100%;
+    padding-top: 150px;
+    padding-bottom: 100px;
+  }
+  .service .service-2{
+    max-width: 100%;
+    width: 90%;
+    align-items: center;
+    margin: auto;
+    text-align: center;
+  }
+  .service .service-2 h1{
+    color: #000;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 1.5px;
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 100px;
+    text-transform: capitalize;
+  }
+  .service .service-2 .service-box{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .service .service-2 .service-box .box-4{
+      height: 300px;
+      width: 300px;
+      background-color: #EC4D37;
+      border-radius: 20px;
+      padding: 70px 20px;
+      box-shadow: 0 0 5px #EC4D37;
+  }
+  .service .service-2 .service-box .box-5{
+      height: 300px;
+      width: 300px;
+      background-color: #7d08b3;
+      border-radius: 20px;
+      padding: 70px 20px;
+      box-shadow: 0 0 5px #7d08b3;
+  }
+  .service .service-2 .service-box .box-6{
+      height: 300px;
+      width: 300px;
+      background-color: #FB607F;
+      border-radius: 20px;
+      padding: 70px 20px;
+      box-shadow: 0 0 5px #FB607F;
+  }
+  .service .service-2 .service-box .box-4:hover{
+    cursor: pointer;
+    transform: scale(1.02);
+    transition: .3s;
+  }
+  .service .service-2 .service-box .box-5:hover{
+    cursor: pointer;
+    transform: scale(1.02);
+    transition: .3s;
+  }
+  .service .service-2 .service-box .box-6:hover{
+    cursor: pointer;
+    transform: scale(1.02);
+    transition: .3s;
+  }
+  .service .service-2 .service-box h2{
+    color: #fff; 
+    letter-spacing: 1.5px;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 80px;
+    font-family: 'Poppins', sans-serif;
+    text-transform: capitalize;
+  }
+  .service .service-2 .service-box a{
+    text-decoration: none;
+    letter-spacing: 1.5px;
+    text-transform: capitalize;
+    color: #333;
+    font-weight: 600;
+    font-size: 15px;
+    border: 2px solid #fff;
+    background-color: #fff;
+    padding: 8px 20px;
+    border-radius: 20px;
+  }
+  .service .service-2 .service-box .box-4 a:hover{
+    color: #EC4D37;
+  }
+  .service .service-2 .service-box .box-5 a:hover{
+    color: #7d08b3;
+  }
+  .service .service-2 .service-box .box-6 a:hover{
+    color: #FB607F;
+  }
+  
+  /*page 6*/
+  
+  .container-4{
+    background-color: white;
+    width: 100%;
+    padding-top: 130px;
+    padding-bottom: 100px;
+  }
+  .container-4 .container-5{
+    max-width: 100%;
+    width: 90%;
+    align-items: center;
+    margin: auto;
+  }
+  .container-4 .container-5 h3{
+    color: #000;
+    letter-spacing: 1.5px;
+    font-size: 40px;
+    margin-bottom: 80px;
+    text-transform: capitalize;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+  }
+  .container-4 .container-5 h3 span{
+    color: #EC4D37;
+  }
+  .container-4 .container-5 .contact-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .container-4 .container-5 .contact-content .layer .box-3{
+    border: 1px solid transparent;
+    background-color: #333;
+    margin-bottom: 15px;
+    height: 80px;
+    width: 570px;
+    padding: 5px 15px;
+  }
+  .container-4 .container-5 .contact-content .layer .box-3 h4{
+    color: #fff;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  .container-4 .container-5 .contact-content .layer .box-3 p{
+    color: #EC4D37;
+    letter-spacing: 1.5px;
+    text-transform: capitalize;
+    font-size: 12px;
+  }
+  .container-4 .container-5 .contact-content .layer .box-3 a{
+    text-decoration: none;
+    letter-spacing: 1.5px;
+    text-transform: capitalize;
+    color: #EC4D37;
+  }
+  .send-mail .your-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+  }
+  .send-mail .your-info input{
+    outline: none;
+    background-color: #333;
+    border: 1px solid transparent;
+    height: 80px;
+    width: 47%;
+    color: #fff;
+    padding: 5px 15px;
+    font-size: 20px;
+    margin-bottom: 18px;
+  }
+  .send-mail textarea{
+    height: 250px;
+    width: 100%;
+    margin: auto;
+    display: flex;
+    outline: none;
+    padding: 20px 20px;
+    background-color: #333;
+    margin-bottom: 25px;
+    font-size: 18px;
+    color: #fff;
+    border: none;
+  }
+  .send-mail .btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .send-mail .btn .sub-btn{
+    padding: 14px 33px;
+    font-size: 17px;
+    border: 2px solid #EC4D37;
+    background-color: #EC4D37;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  .send-mail .btn .sub-btn:hover{
+    background-color: transparent;
+    color: #EC4D37;
+  }
+  .send-mail p{
+    text-align: center;
+    color: #fff;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+    margin-bottom: 30px;
+  }
+
+  @media screen and (max-width: 600px){
+    .navbar{
+      display: flex;
+      align-items: center;
+      padding: 5px 10px;
+      font-size: 18px;
+    }
+  .navbar .logo{
+      color: #fff;
+      cursor: pointer;
+      letter-spacing: 1px;
+      font-size: 25px;
+  }
+  .navbar ul li{
+      padding-left: 10px;
+  }
+  .navbar ul li a{
+      padding: 5px;
+      font-size: 15px;
+  }
+  .navbar ul li ul.dropdown li{
+    display: block;
+  }
+  .navbar ul li ul.dropdown li:hover{
+    background-color: #EC4D37;
+  
+  }
+  .navbar ul li ul.dropdown li a{
+    padding: 20px 0px;
+  }
+  .navbar ul li ul.dropdown li a:hover{
+    color: #fff;
+  }
+  .navbar ul li ul.dropdown{
+    width: 100%;
+    background-color: #333;
+    position: absolute;
+    z-index: -1;
+    display: none;
+  }
+  .navbar ul li a:hover{
+    color: #EC4D37;
+  }
+  .navbar ul li:hover ul.dropdown{
+    display: block;
+  }
+  .navbar .btn{
+    display: none;
+  }
+
+  /* page 1 */
+    .container-1{
+      background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(img/me-cap.jpg);
+      background-attachment: fixed;
+      height: 100vh;
+      width: 100%;
+      padding: 2% 3%;
+      position: relative;
+      text-align: center;
+    }
+   /* .bg-img{
+      background-image: url(img/me-cap.jpg);
+      height: 100%;
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }*/
+    .container-1 .intro-1{
+      position: absolute;
+      top: 40%;
+      transition: translateY(-50%);
+      font-family: 'Poppins', sans-serif;
+    }
+    .container-1 .intro-1 h5{
+      color: #fff;
+      font-size: 15px;
+      letter-spacing: 1px;
+    }
+    .container-1 .intro-1 h2{
+     color: #fff;
+     font-size: 30px;
+     letter-spacing: 1px;
+    }
+    .container-1 .intro-1 h4{
+      color: #fff;
+      font-size:  20px;
+      font-weight: 400;
+      margin-bottom: 20px;
+      letter-spacing: 1.5px;
+    }
+    .container-1 .intro-1 .contact-1 .fb{
+      padding: 8px 14px;
+      font-size: 20px;
+    }
+    .container-1 .intro-1 .contact-1 .mail{
+      padding: 8px 12px;
+      font-size: 20px;
+    } 
+    /* page 2 */
+    .container-2{
+      padding-top: 30px;
+    }
+    .container-2 .about-cp{
+      display: block;
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 30px;
+    }
+    .container-2 .content-1 .text-1 h2{
+     display: none;
+     margin-bottom: 0px;
+    }
+    .container-2 .content-1{
+      display: flex;
+      flex-direction: column;
+      width: 90%;
+      max-width: 100%;
+      align-items: center;
+    }
+    .container-2 .content-1 img{
+      height: 250px;
+      width: 250px;
+      display: block;
+      border-radius: 10px;
+      margin: auto;
+      margin-bottom: 30px;
+    }
+    .container-2 .content-1 .text-1 p{
+      color: #333;
+      letter-spacing: 1px;
+      line-height: 25px;
+      margin-bottom: 20px;
+      font-size: 15px;
+    }
+    .container-2 .content-1 .text-2{
+      display: flex;
+      flex-direction: column;
+    }
+    .container-2 .content-1 .text-2 p{
+      color: #333;
+      font-size: 15px;
+      margin-bottom: 20px;
+      letter-spacing: 1px;
+      line-height: 10px;
+      margin-left: 10px;
+    }
+    .p-2{
+      font-size: 15px;
+      text-align: left;
+      margin-left: 0px;
+    }
+    /* page 3 */
+    .interest{
+      width: 100%;
+      padding: 30px 0 10px 0;
+      background-color: white;
+      margin-top: 50px;
+    }
+    .interest .hobbies{
+      width: 90%;
+      max-width: 90%;
+      align-items: center;
+      margin-left: auto;
+    }
+    .interest .hobbies h3{
+      letter-spacing: 1px;
+      margin-bottom: 30px;
+      font-size: 25px;
+      text-align: center;
+    }
+    .interest .hobbies .box-1{
+      display: flex;
+      justify-content: space-between;
+    }
+    .interest .hobbies .box-1 .box-2{
+      width: 100px;
+      padding: 10px 0;
+      background-color: #333;
+      margin-bottom: 20px;
+      text-align: center;
+      box-shadow: 0 0 0px #333;
+      border-radius: 10px;
+    }
+    .interest .hobbies .box-1 .box-2:hover{
+      cursor: pointer;
+      transition: 0.3s;
+      box-shadow: 0 0 10px #EC4D37;
+      transform: scale(1.02);
+    }
+    .interest .hobbies .box-1 .box-2 p{
+      color: #fff;
+      letter-spacing: 1.5px;
+      text-indent: capitalize;
+      font-size: 12px;
+      font-weight: 400;
+      text-transform: capitalize;
+      padding: auto;
+    }
+    /* page 3 */
+    .skills .skill-content{
+      max-width: 90%;
+      width: 90%;
+      margin: auto;
+      align-items: start;
+    }
+    .skills .skill-content h4{
+      letter-spacing: 1px;
+      margin-bottom: 30px;
+      font-weight: 400px;
+      font-size: 25px;
+      text-align: center;
+      margin-top: 30px;
+    }
+    .skills .skill-content p{
+      margin-bottom: 10px;
+      font-size: 15px;
+      font-weight: 400px;
+      text-align: center;
+    }
+    .skills .skill-content p strong{
+      color: #EC4D37;
+      font-weight: 600px;
+    }
+    /* page 4 */
+    .container-3 .resume{
+      max-width: 90%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    .container-3 .resume .school{
+      margin-right: 0px;
+    }
+    .container-3 .resume .school h2{
+      font-size: 25px;
+      letter-spacing: 1px;
+      margin-bottom: 30px;
+      text-transform: capitalize;
+      text-align: center;
+    }
+    .container-3 .resume .school h4{
+      letter-spacing: 1px;
+      margin-bottom: 15px;
+      margin-left: 0px;
+      font-weight: 400px;
+      font-size: 18px;
+    }
+    .container-3 .resume .school p{
+      margin-left: 35px;
+      margin-bottom: 10px;
+      letter-spacing: 1px;
+      font-size: 15px;
+    }
+    .container-3 .resume .achievement{
+      margin-top: 25px;
+    }
+    .container-3 .resume .achievement h4{
+      font-size: 18x;
+      margin-bottom: 15px;
+      letter-spacing: 1px;
+      font-weight: 400px;
+      margin-top: 0px;
+    }
+    .container-3 .resume .achievement p{
+      letter-spacing: 1px;
+      margin-bottom: 10px;
+      margin-left: 35px;
+      font-size: 15px;
+    }
+    /* page 5 */
+    .service .service-2{
+      max-width: 100%;
+      width: 90%;
+      align-items: center;
+      margin: auto;
+      text-align: center;
+    }
+    .service .service-2 h1{
+      letter-spacing: 1px;
+      text-align: center;
+      font-size: 30px;
+      margin-bottom: 40px;
+    }
+    .service .service-2 .service-box{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    .service .service-2 .service-box .box-4{
+      margin-bottom: 50px;
+    }
+    .service .service-2 .service-box .box-5{
+      margin-bottom: 50px;
+    }
+    /* page 6 */
+    .container-4{
+      background-color: white;
+      width: 100%;
+      padding-top: 130px;
+      padding-bottom: 100px;
+    }
+    .container-4 .container-5{
+      max-width: 100%;
+      width: 95%;
+    }
+    .container-4 .container-5 h3{
+      letter-spacing: 1px;
+      font-size: 30px;
+      margin-bottom: 40px;
+    }
+    .container-4 .container-5 .contact-content{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    .container-4 .container-5 .contact-content .layer .box-3{
+      margin-bottom: 20px;
+    }
+    .container-4 .container-5 .contact-content .layer .box-3 h4{
+      font-size: 18px;
+    }
+    .container-4 .container-5 .contact-content .layer .box-3 p{
+      letter-spacing: 1px;
+      font-size: 13px;
+    }
+    .container-4 .container-5 .contact-content .layer .box-3 a{
+      letter-spacing: 1px;
+    }
+ }
